@@ -169,7 +169,7 @@ def run_bot():
     bot_app.add_handler(CommandHandler("invite", invite))
 
     print("Bot polling started...")
-    bot_app.run_polling(close_loop=False)
+        bot_app.run_polling(close_loop=False, stop_signals=None)
 
 
 # ---------------- اجرای همزمان ----------------
