@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Gem Quest</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app">
+  <div class="top-bar">
+    <div class="level-box">
+      <span id="level">1</span>
+      <small>Level</small>
+    </div>
+    <div class="xp-bar-container">
+      <div class="xp-bar" id="xpBar"></div>
+    </div>
+  </div>
+
+  <div class="gems-display">
+    <img src="https://cdn-icons-png.flaticon.com/512/2933/2933116.png" class="gem-icon" alt="gem">
+    <span id="gemsCount">0</span>
+  </div>
+
+  <div class="tap-area">
+    <button id="tapButton" class="tap-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/2933/2933116.png" alt="tap">
+    </button>
+    <div id="floatingTexts"></div>
+  </div>
+
+  <div class="actions">
+    <button id="dailyBtn" class="action-btn">🎁 جایزه روزانه</button>
+    <button id="inviteBtn" class="action-btn">🔗 دعوت دوستان</button>
+  </div>
+
+  <div class="missions-panel">
+    <h3>🎯 ماموریت‌ها</h3>
+    <div id="missionsList"></div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
